@@ -5,17 +5,17 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-browser-sync");
 	grunt.loadNpmTasks("grunt-contrib-watch");
 	grunt.loadNpmTasks("grunt-postcss");
-  
+
     grunt.initConfig({
         less: {
 	        style: {
 	            files: {
-		            "css/style.css": "less/style.less"
+		            "source/css/style.css": "source/less/style.less"
 		        }
 	        }
 	    },
-		
-		
+
+
 		postcss: {
 			style: {
 				options: {
@@ -23,20 +23,20 @@ module.exports = function(grunt) {
 						require("autoprefixer")()
 					]
 				},
-				src: "css/*.css"
+				src: "source/css/*.css"
 			}
 		},
-		
+
 		browserSync: {
 			server: {
 				bsFiles: {
 					src: [
-						"*.html",
-						"css/*.css"
+						"source/*.html",
+						"source/css/*.css"
 					]
 				},
 				options: {
-					server: ".",
+					server: "source/.",
 					watchTask: true,
 					notify: false,
 					open: true,
@@ -45,15 +45,15 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		
+
 		watch: {
 			style: {
-				files: ["less/**/*.less"],
+				files: ["source/less/**/*.less"],
 				tasks: ["less", "postcss"]
 			}
 		}
-		
+
   });
-  
+
   grunt.registerTask("serve", ["browserSync", "watch"]);
 };
