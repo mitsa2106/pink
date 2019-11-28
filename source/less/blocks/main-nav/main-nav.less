@@ -1,4 +1,71 @@
-.main-nav {
+.page-header {
   background-image: url("../img/Layer 157-mobile.png");
-  
+  width: 320px;
+  min-height: 66px;
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 75px;
+  height: 22px;
+  padding: 0;
+
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.main-nav {
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.main-nav__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  width: 50px;
+  height: 24px;
+  padding: 0;
+
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  background-image: url("../img/menu-burger.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.site-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  width: 320px;
+
+  list-style: none;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  min-width: 320px;
+}
+
+.site-list__item a{
+  display: block;
+  box-sizing: border-box;
+  padding: 16px 90px;
+  text-align: center;
+  color: #ffffff;
+  background-image: url("../img/Layer 157-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
