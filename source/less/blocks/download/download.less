@@ -1,39 +1,42 @@
 .download {
   width: 320px;
   margin: 0 auto;
+  background-color: #283645;
 
   //временно для сетки
-  min-height: 733px;
+  min-height: 271px;
 }
 
 .download__header {
-
+  width: 280px;
+  margin: 0 auto;
 }
 
-@media (min-width: @tablet-width) {
-  .download__image {
-    display: none;
-  }
-
-  .download__header {
-    width: 660px;
-    background: url("../../../img/back-hand-tablet.png") no-repeat 50% 0;
-
-    //временно для сетки
-    min-height: 729px;
-  }
+.download__slogan {
+  display: none;
 }
 
-@media (min-width: @desktop-width) {
-  .download__image {
-    display: none;
-  }
+.download__button {
+  width: 280px;
+  height: 55px;
+  margin-top: 28px;
+  margin-bottom: 32px;
+  padding: 16px 40px;
+  color: white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  box-sizing: border-box;
 
-  .download__header {
-    width: 1200px;
-    background: url("../../../img/back-hand-desktop.png") no-repeat 50% 0;
-
-    //временно для сетки
-    min-height: 854px;
-  }
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  border-radius: 60px;
 }
+
+//@media (min-width: @tablet-width) {
+//
+//}
+//
+//@media (min-width: @desktop-width) {
+//
+//}

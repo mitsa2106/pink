@@ -1,7 +1,18 @@
 .page-header {
   width: 320px;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.3);
+  background: url("../../../img/back-hand-mobile.png") no-repeat 50% 0;
+  position: relative;
+
+  //временно для сетки
+  min-height: 721px;
+}
+
+.page-header__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  left: 20px;
+  position: absolute;
 }
 
 .page-header__list {
@@ -11,6 +22,7 @@
   justify-content: space-between;
   width: 280px;
   margin: 0 auto;
+  background: rgba(0, 0, 0, 0.3);
 
   //временно для сетки
   min-height: 69px;
@@ -35,11 +47,23 @@
 @media (min-width: @tablet-width) {
   .page-header {
     min-width: 660px;
+    background: url("../../../img/back-hand-tablet.png") no-repeat 50% 0;
+    position: relative;
+
+    //временно для сетки
+    min-height: 984px;
+  }
+
+  .page-header__wrapper {
+    width: 620px;
+    margin: 0 auto;
+    position: absolute;
   }
 
   .page-header__list {
     width: 620px;
     margin: 0 auto;
+
     //временно для сетки
     height: 110px;
   }
@@ -60,12 +84,15 @@
 @media (min-width: @desktop-width) {
   .page-header {
     min-width: 1200px;
+    background: url("../../../img/back-hand-desktop.png") no-repeat 50% 0;
+    position: relative;
 
     //временно для сетки
-    height: 110px;
+    min-height: 853px;
   }
 
   .page-header__wrapper {
+    position: absolute;
     width: 940px;
     margin: 0 auto;
     display: flex;
