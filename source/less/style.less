@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap");
-@import "blocks/main-nav/main-nav";
-@import "blocks/page-header/page-header";
+@import "variables";
 @import "scaffolding";
 @import "mixins";
-@import "variables";
+@import "blocks/page-header/page-header";
+@import "blocks/main-nav/main-nav";
+@import "blocks/page-main/page-main";
+@import "blocks/download/download";
+@import "blocks/advantages/advantages";
 
 
 @font-face {
@@ -22,7 +24,28 @@ body {
   font-weight: 400;
   color: #000000;
 
-  background-color: #ffffff;
+  background: url("../img/white background-mobile.png") no-repeat 50% 0;
+  background-size: 320px auto;
+
+  min-height: 3170px;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    background: url("../img/white background-tablet.png") no-repeat 50% 0;
+    background-size: 660px auto;
+
+    min-height: 3009px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    background: url("../img/whie background-desktop.png") no-repeat 50% 0;
+    background-size: 1200px auto;
+
+    min-height: 2056px;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -41,4 +64,18 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.button {
+  display: inline-block;
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  //text-transform: uppercase;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;
+  background-color: transparent;
+  box-sizing: border-box;
 }
