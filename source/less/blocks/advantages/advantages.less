@@ -78,7 +78,8 @@
   text-align: center;
 }
 
-.screen {
+.screen1,
+.screen2 {
   display: none;
 }
 
@@ -138,14 +139,6 @@
     margin-top: -474px;
   }
 
-  .advantages__item-phone {
-    //display: inline-block;
-    //margin: 0 auto;
-    //padding: 0;
-    //align-items: center;
-    //text-align: center;
-  }
-
   .screen3 {
     margin: 0;
     width: 268px;
@@ -175,6 +168,83 @@
     display: inline-block;
     width: 940px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 76px;
+  }
+
+  .advantages__list {
+    margin: 0 auto;
+    margin-bottom: 67px;
+    margin-top: 359px;
+    padding: 0;
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 250px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  .advantages__title {
+    text-align: center;
+    padding: 0 15px;
+    margin-bottom: 23px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .advantages__description {
+    text-align: center;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .advantages__list-iphone {
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: -628px;
+    margin-bottom: 58px;
+    padding: 0;
+  }
+
+  .advantages__item-phone {
+    width: 186px;
+    height: 301px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    //box-shadow: ;
+  }
+
+  .advantages__item-phone::after {
+    content: "";
+    position: absolute;
+    top: 290px;
+    left: -50px;
+    width: 294px;
+    height: 17px;
+    background: url("../../../img/Layer 156.png") no-repeat 100%;
+  }
+
+  .screen1 {
+    background: url("../../../img/iphone screen1-desktop.png") no-repeat 100%;
+  }
+
+  .screen2 {
+    background: url("../../../img/iphone screen2-desktop.png") no-repeat 100%;
+  }
+
+  .screen3 {
+    background: url("../../../img/iphone screen3-desktop.png") no-repeat 100%;
   }
 }
