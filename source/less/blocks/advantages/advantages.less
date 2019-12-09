@@ -92,6 +92,10 @@
   background: url("../../../img/iphone screen 3-mobile-cut2.png") no-repeat 100%;
 }
 
+.advantages__study {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .advantages {
     width: 620px;
@@ -136,7 +140,7 @@
   .advantages__list-iphone {
     padding: 0;
     margin: 0;
-    margin-top: -474px;
+    margin-top: -497px;
   }
 
   .screen3 {
@@ -144,6 +148,63 @@
     width: 268px;
     height: 481px;
     background: url("../../../img/Iphone screen 3-tablet.png") no-repeat;
+  }
+
+  .advantages__study {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 -20px;
+    margin-bottom: 100px;
+    padding: 0 20px;
+    background-color: white;
+
+    min-height: 335px;
+
+    .advantages__item--picture {
+      margin: 0;
+      padding: 0;
+      width: 300px;
+      background: url("../../../img/24-mobile.png") no-repeat 0 59px;
+    }
+
+    .advantages__study--wrapper {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      width: 310px;
+    }
+
+    .advantages__study--title {
+      margin: 0;
+      margin-top: 100px;
+      margin-bottom: 16px;
+      padding: 0;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: bold;
+      color: black;
+    }
+
+    .advantages__study--description {
+      margin: 0;
+      margin-bottom: 12px;
+      padding: 0;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: normal;
+      color: black;
+    }
+
+    .advantages__study--more {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: normal;
+      color: #d22856;
+    }
   }
 }
 
@@ -173,7 +234,7 @@
 
   .advantages__list {
     margin: 0 auto;
-    margin-bottom: 67px;
+    //margin-bottom: 66px;
     margin-top: 359px;
     padding: 0;
     width: 940px;
@@ -223,7 +284,6 @@
     padding: 0;
     text-align: center;
     position: relative;
-    //box-shadow: ;
   }
 
   .advantages__item-phone::after {
@@ -246,5 +306,51 @@
 
   .screen3 {
     background: url("../../../img/iphone screen3-desktop.png") no-repeat 100%;
+  }
+
+  .advantages__study {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0;
+    margin-top: 425px;
+    // 426=359+66
+    padding: 0;
+    background: inherit;
+  }
+
+  .advantages__item--picture {
+    margin: 0;
+    padding: 0;
+    width: 298px;
+    min-height: 345px;
+    background: url("../../../img/24-desktop.png") no-repeat 0 0;
+  }
+
+  .advantages__study--wrapper {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 570px;
+  }
+
+  .advantages__study--title {
+    margin: 0;
+    margin-top: 40px;
+    //  margin-bottom: 16px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .advantages__study--description {
+    //  margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .advantages__study--more {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
