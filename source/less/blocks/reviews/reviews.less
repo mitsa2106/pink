@@ -29,7 +29,8 @@
 
 .reviews__item {
   width: 280px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   padding: 0;
   padding-top: 42px;
@@ -86,7 +87,60 @@
 }
 
 @media (min-width: @tablet-width) {
+  .reviews {
+    width: 660px;
 
+    //временно для сетки
+    min-height: 235px;
+  }
+
+  .reviews__wrapper {
+    width: 620px;
+
+    //временно для сетки
+    min-height: 235px;
+  }
+
+  .reviews__list {
+    width: 620px;
+
+    //временно для сетки
+    min-height: 200px;
+  }
+
+  .reviews__item {
+    width: 620px;
+    padding: 0;
+  }
+
+  .reviews__author-name {
+    margin-bottom: 2px;
+    font-weight: bolder;
+  }
+
+  .reviews__author-data {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 33px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: center;
+    color: #283645;
+  }
+
+  .reviews__text {
+    order: -1;
+    margin-bottom: 35px;
+    font-size: 18px;
+  }
+
+  .reviews__toggles {
+    min-width: 70px;
+
+    min-height: 13px;
+  }
 }
 
 @media (min-width: @desktop-width) {
