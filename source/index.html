@@ -141,69 +141,138 @@
 	  </section>
 
 	  <section class="price">
-	    <div class="price__wrapper slider">
-	      <h2 class="visually-hidden">Прайс-лист</h2>
-        <!-- первый вариант решения таблицы прайса-->
-		    <table class="price__table table slider__list">
-		      <tr> <!-- 1 строка-->
-		        <td class="table__title table__title--empty"></td>
-			      <td class="table__package slider__item">База<br> 1,99USD</td>
-			      <td class="table__package slider__item">Стандарт<br> 3,99 USD</td>
-			      <td class="table__package slider__item">Анлим<br> 9,99 USD</td>
-		      </tr>
-		      <tr> <!-- 2 строка-->
-		        <td class="table__title slider__item">Розовый фильтр</td>-->
-			      <td class="table__function table__function--yes slider__item"></td>
-			      <td class="table__function table__function--yes slider__item"></td>
-			      <td class="table__function table__function--yes slider__item"></td>
-		      </tr>
-		      <tr> <!-- 3 строка-->
-		        <td class="table__title slider__item">Смайлики</td>
-			      <td class="table__function table__function--no slider__item"></td>
-			      <td class="table__function table__function--yes slider__item"></td>
-			      <td class="table__function table__function--yes slider__item"></td>
-		      <</tr>
-		      <tr> <!-- 4 строка-->
-		        <td class="table__title slider__item">Комментарии</td>
-			      <td class="table__function table__function--no slider__item"></td>
-			      <td class="table__function table__function--no slider__item"></td>
-			      <td class="table__function table__function--yes slider__item"></td>
-          </tr>
-        </table>
+      <h2 class="visually-hidden">Цены на услуги</h2>
+      <div class="price__wrapper">
+        <div class="price__inner slider">
+          <table class="price__table">
+            <tr class="price__table-header"> <!-- 1 строка-->
+              <td class="price__features-header">
+              </td>
+              <th class="price__header">
+                <div class="price__name">База</div>
+                <div class="price__price">1,99 USD</div>
+              </th>
+              <th class="price__header  price__header--flag">
+                <div class="price__name">Стандарт</div>
+                <div class="price__flag">Хит</div>
+                <div class="price__price">3,99 USD</div>
+              </th>
+              <th class="price__header">
+                <div class="price__name">Анлим</div>
+                <div class="price__price">9,99 USD</div>
+              </th>
+            </tr>
+            <tr> <!-- 2 строка-->
+              <td class="price__item  price__item--feature-title">
+                <span class="price__feature">Розовый фильтр</span>
+              </td>
+              <td class="price__item">
+                <span class="price__feature  price__feature--name">Розовый фильтр</span>
+                <span class="price__feature-status  price__feature-status--on">Включено</span>
+              </td>
+              <td class="price__item">
+                <span class="price__feature  price__feature--name">Розовый фильтр</span>
+                <span class="price__feature-status  price__feature-status--on">Включено</span>
+              </td>
+              <td class="price__item">
+                <span class="price__feature  price__feature--name">Розовый фильтр</span>
+                <span class="price__feature-status  price__feature-status--on">Включено</span>
+              </td>
+            </tr>
+            <tr> <!-- 3 строка-->
+              <td class="price__item  price__item--feature-title">
+                <span class="price__feature">Смайлики</span>
+              </td>
+              <td class="price__item">
+                <span class="price__feature  price__feature--name">Смайлики</span>
+                <span class="price__feature-status  price__feature-status--off">Не включено</span>
+              </td>
+              <td class="price__item">
+                <span class="price__feature  price__feature--name">Смайлики</span>
+                <span class="price__feature-status  price__feature-status--on">Включено</span>
+              </td>
+              <td class="price__item">
+                <span class="price__feature  price__feature--name">Смайлики</span>
+                <span class="price__feature-status  price__feature-status--on">Включено</span>
+              </td>
+            </tr>
+            <tr> <!-- 4 строка-->
+              <td class="price__item  price__item--feature-title">
+                <span class="price__feature">Комментарии</span>
+              </td>
+              <td class="price__item">
+                <span class="price__feature  price__feature--name">Комментарии</span>
+                <span class="price__feature-status  price__feature-status--off">Не включено</span>
+              </td>
+              <td class="price__item">
+                <span class="price__feature  price__feature--name">Комментарии</span>
+                <span class="price__feature-status  price__feature-status--off">Не включено</span>
+              </td>
+              <td class="price__item">
+                <span class="price__feature  price__feature--name">Комментарии</span>
+                <span class="price__feature-status  price__feature-status--on">Включено</span>
+              </td>
+            </tr>
+          </table>
+          <div class="slider__control price__control">
+            <input class="price__switcher" type="radio" name="price" id="price-radio-1" checked>
+            <label class="slider__control-button slider__control-button--checked" for="price-radio-1">
+            </label>
+            <input class="price__switcher" type="radio" name="price" id="price-radio-2">
+            <label class="slider__control-button" for="price-radio-2">
+            </label>
+            <input class="price__switcher" type="radio" name="price" id="price-radio-3">
+            <label class="slider__control-button" for="price-radio-3">
+            </label>
+          </div>
+        </div>
+      </div>
 
-        <!--второй вариант решения таблицы-прайса-->
-		    <!--<div class="price__list table slider__list">-->
-		      <!--<ul class="table__item slider__item">-->
-			      <!--<li class="table__empty"></li>-->
-			      <!--<li class="table__title">Розовый фильтр</li>-->
-			      <!--<li class="table__title">Смайлики</li>-->
-			      <!--<li class="table__title">Комментарии</li>-->
-		      <!--</ul>-->
-		      <!--<ul class="table__item slider__item">-->
-			      <!--<li class="table__package">База<br> 1,99USD</li>-->
-			      <!--<li class="table__function table__function--yes"></li>-->
-			      <!--<li class="table__function table__function--no"></li>-->
-			      <!--<li class="table__function table__function--no"></li>-->
-		      <!--</ul>-->
-			    <!--<ul class="table__item slider__item">-->
-			      <!--<li class="table__package">Стандарт<br> 3,99 USD</li>-->
-			      <!--<li class="table__function table__function--yes"></li>-->
-			      <!--<li class="table__function table__function--yes"></li>-->
-			      <!--<li class="table__function table__function--no"></li>-->
-		      <!--</ul>-->
-			    <!--<ul class="table__item slider__item">&ndash;&gt;-->
-			      <!--<li class="table__package">Анлим<br> 9,99 USD</li>-->
-			      <!--<li class="table__function table__function--yes"></li>-->
-			      <!--<li class="table__function table__function--yes"></li>-->
-			      <!--<li class="table__function table__function--yes"></li>-->
-		      <!--</ul>-->
-		    <!--</div>-->
-		    <p class="price__toggles slider__toggles">
-		      <button class="slider__toggle" type="button">1</button>
-			    <button class="slider__toggle" type="button">2</button>
-			    <button class="slider__toggle" type="button">3</button>
-		    </p>
-		  </div>
+
+	    <!--<div class="price__wrapper slider">-->
+
+        <!--<table class="price__table-mob table-mob slider__list">-->
+          <!--<tr> &lt;!&ndash; 1 строка&ndash;&gt;-->
+            <!--<td class="table__title table__title&#45;&#45;empty"></td>-->
+            <!--<td class="table__package slider__item">Стандарт<br> 3,99USD</td>-->
+            <!--<td class="table__package slider__item"></td>-->
+          <!--</tr>-->
+        <!--</table>-->
+        <!--&lt;!&ndash; первый вариант решения таблицы прайса&ndash;&gt;-->
+		    <!--<table class="price__table table slider__list">-->
+		      <!--<tr> &lt;!&ndash; 1 строка&ndash;&gt;-->
+		        <!--<td class="table__title table__title&#45;&#45;empty"></td>-->
+			      <!--<td class="table__package slider__item">База<br> 1,99USD</td>-->
+			      <!--<td class="table__package slider__item">Стандарт<br> 3,99 USD</td>-->
+			      <!--<td class="table__package slider__item">Анлим<br> 9,99 USD</td>-->
+		      <!--</tr>-->
+		      <!--<tr> &lt;!&ndash; 2 строка&ndash;&gt;-->
+		        <!--<td class="table__title slider__item">Розовый фильтр</td>&ndash;&gt;-->
+			      <!--<td class="table__function table__function&#45;&#45;yes slider__item"></td>-->
+			      <!--<td class="table__function table__function&#45;&#45;yes slider__item"></td>-->
+			      <!--<td class="table__function table__function&#45;&#45;yes slider__item"></td>-->
+		      <!--</tr>-->
+		      <!--<tr> &lt;!&ndash; 3 строка&ndash;&gt;-->
+		        <!--<td class="table__title slider__item">Смайлики</td>-->
+			      <!--<td class="table__function table__function&#45;&#45;no slider__item"></td>-->
+			      <!--<td class="table__function table__function&#45;&#45;yes slider__item"></td>-->
+			      <!--<td class="table__function table__function&#45;&#45;yes slider__item"></td>-->
+		      <!--<</tr>-->
+		      <!--<tr> &lt;!&ndash; 4 строка&ndash;&gt;-->
+		        <!--<td class="table__title slider__item">Комментарии</td>-->
+			      <!--<td class="table__function table__function&#45;&#45;no slider__item"></td>-->
+			      <!--<td class="table__function table__function&#45;&#45;no slider__item"></td>-->
+			      <!--<td class="table__function table__function&#45;&#45;yes slider__item"></td>-->
+          <!--</tr>-->
+        <!--</table>-->
+
+
+		    <!--<p class="price__toggles slider__toggles">-->
+		      <!--<button class="slider__toggle" type="button">1</button>-->
+			    <!--<button class="slider__toggle" type="button">2</button>-->
+			    <!--<button class="slider__toggle" type="button">3</button>-->
+		    <!--</p>-->
+		  <!--</div>-->
 	  </section>
 	</main>
 
