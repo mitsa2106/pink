@@ -1,0 +1,72 @@
+.contacts {
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: -41px;
+  text-align: center;
+
+  min-height: 602px;
+  background: url("../../../img/triangle-white-footer.svg") no-repeat 50% 70%, url("../../../img/map-mobile.jpg") no-repeat 50% 100%;
+
+  &__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 82px;
+    padding: 0;
+    background-color: white;
+  }
+
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 27px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: normal;
+    color: @color-black;
+  }
+
+  &__list {
+    .reset-list();
+    padding-bottom: 47px;
+    background-color: white;
+  }
+
+  &__item {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    color: @color-black;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: @color-black;
+  }
+
+  &__text {
+    width: 237px;
+    font-size: 24px;
+    line-height: 24px;
+    color: @color-pink;
+  }
+
+  .map {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    width: 660px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -107px;
+    padding: 0;
+    background: pink;
+    //поменять на white
+
+    min-height: 197px;
+  }
+}
