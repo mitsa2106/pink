@@ -6,7 +6,7 @@
   text-align: center;
 
   min-height: 602px;
-  background: url("../../../img/triangle-white-footer.svg") no-repeat 50% 64%, url("../../../img/map-mobile.jpg") no-repeat 50% 100%;
+  background: url("../../../img/triangle-white-footer.svg") no-repeat 50% 64%, url("../../../img/map-mobile.jpg") no-repeat 50% 190%;
 
   &__wrapper {
     width: 320px;
@@ -49,6 +49,7 @@
     width: 237px;
     font-size: 24px;
     line-height: 24px;
+    text-decoration: none;
     color: @color-pink;
   }
 
@@ -65,7 +66,7 @@
     margin: 0 auto;
     margin-top: -107px;
 
-    background: url("../../../img/triangle-white-footer.svg") no-repeat 50% 55%, url("../../../img/map-tablet.jpg") no-repeat 50% 35%;
+    background: url("../../../img/triangle-white-footer.svg") no-repeat 50% 55%, url("../../../img/map-tablet.jpg") no-repeat 50% -65%;
     background-size: 100%;
 
     min-height: 779px;
@@ -102,32 +103,52 @@
   }
 }
 
-//@media (min-width: @desktop-width) {
-//  .contacts {
-//    width: 100%;
-//    min-height: 880px;
-//    background: url("../img/bg-triangle-white-footer.svg") no-repeat 50% 62%, url("../img/bg-map-desktop@1x.jpg") no-repeat 50% -20%;
-//    background-size: 100%;
-//
-//    &__list {
-//      padding: 120px;
-//      padding-top: 30px;
-//    }
-//  }
-//
-//  .contacts__list li:nth-child(3) {
-//    margin-top: 0;
-//  }
-//
-//  .contacts__title {
-//    font-size: 50px;
-//    line-height: 100%;
-//    padding-left: 25%;
-//    padding-right: 25%;
-//    padding-top: 80px;
-//  }
-//
-//  .contacts__item {
-//    width: 15%;
-//  }
-//}
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background: url("../../../img/triangle-white-footer.svg") no-repeat 50% 49%, url("../../../img/map-desktop.jpg") no-repeat 50% -100%;
+    background-size: 100%;
+
+    min-height: 868px;
+
+    &__wrapper {
+      width: 1200px;
+    }
+
+    &__title {
+      padding: 62px 160px;
+      padding-bottom: 55px;
+      margin: 0 auto;
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+
+  .contacts__list {
+    padding: 0 130px;
+    padding-bottom: 5px;
+  }
+
+  .contacts__item {
+    width: 15%;
+  }
+
+  .contacts__list li:nth-child(3) {
+    order: 2;
+  }
+
+  .contacts__list li:nth-child(2) {
+    order: 3;
+  }
+
+  .contacts__list li:nth-child(1) {
+    order: 1;
+  }
+
+  .contacts__subtitle {
+    display: inline-block;
+    margin-bottom: 22px;
+  }
+}
