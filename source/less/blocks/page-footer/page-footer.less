@@ -1,13 +1,14 @@
 .page-footer {
+  width: 320px;
+  margin: 0 auto;
   display: none;
+  background-color: white;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer {
+    display: block;
     width: 660px;
-    margin: 0 auto;
-    padding: 0;
-    background: transparent;
 
     min-height: 127px;
   }
@@ -16,26 +17,119 @@
     width: 620px;
     padding: 0 20px;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 
     min-height: 127px;
+  }
+
+  .footer__logo {
+    width: 150px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background: url("../../../img/logotype-blue-tablet.svg") no-repeat center;
+  }
+
+  .social {
+    width: 179px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social__list {
+    width: 179px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  .social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 51px;
+    height: 51px;
+    background-color: #fefefe;
+    border-radius: 50%;
+    border: 4px solid @color-grey;
+    box-sizing: border-box;
+
+    &--twitter {
+      background: url("../../../img/twitter.svg") no-repeat center;
+      background-size: 50%;
+    }
+
+    &--facebook {
+      background: url("../../../img/facebook.svg") no-repeat center;
+      background-size: 25%;
+    }
+
+    &--youtube {
+      background: url("../../../img/youtube.svg") no-repeat center;
+      background-size: 35%;
+    }
+  }
+
+  .copyright {
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__text {
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: bold;
+      color: @color-black;
+    }
+
+    &__link {
+      width: 27px;
+      height: 34px;
+      margin-left: 15px;
+      background: url("../../../img/htmlacademy.svg") no-repeat center;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
     width: 1200px;
-    margin: 0 auto;
-    padding: 0;
-    background: transparent;
 
-    min-height: 195px;
+    min-height: 197px;
   }
 
   .page-footer__wrapper {
     width: 940px;
     padding: 0 130px;
-    margin: 0;
 
     min-height: 195px;
+  }
+
+  .footer__logo {
+    background: url("../../../img/logotype-blue-desktop.svg") no-repeat center;
+  }
+
+  .copyright {
+    &__text {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    &__link {
+      margin-left: 10px;
+    }
   }
 }
