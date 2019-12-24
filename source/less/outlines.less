@@ -8,8 +8,8 @@
 @import "blocks/advantages/advantages";
 @import "blocks/reviews/reviews";
 @import "blocks/price/price";
-@import "blocks/page-footer/page-footer";
 @import "blocks/contacts/contacts";
+@import "blocks/page-footer/page-footer";
 
 @font-face {
   font-family: "Open Sans", sans-serif;
@@ -19,6 +19,7 @@
 
 body {
   background: @bg-darkgrey url("../preview/pink-index-mobile.jpg") no-repeat 50% 0;
+  //background: url("../img/bg-white-mobile.png") no-repeat 50% 0;
   background-size: 320px auto;
   min-height: 320px;
 }
@@ -26,6 +27,7 @@ body {
 @media (min-width: @tablet-width) {
   body {
     background: @bg-darkgrey url("../preview/pink-index-tablet.jpg") no-repeat 50% 0;
+    //background: url("../img/bg-white-tablet.png") no-repeat 50% 0;
     background-size: 660px auto;
   }
 }
@@ -33,6 +35,7 @@ body {
 @media (min-width: @desktop-width) {
   body {
     background: @bg-darkgrey url("../preview/pink-index-desktop.jpg") no-repeat 50% 0;
+    //background: url("../img/bg-white-desktop.png") no-repeat 50% 0;
     background-size: 1200px auto;
   }
 }
@@ -69,21 +72,3 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 }
 
-//.main-nav {
-//  //временно для сетки
-//  min-height: 255px;
-//}
-//
-//@media (min-height: @tablet-width) {
-//  .main-nav {
-//    //временно для сетки
-//    min-height: 255px;
-//  }
-//}
-//
-//@media (min-height: @desktop-width) {
-//  .main-nav {
-//    //временно для сетки
-//    min-height: 110px;
-//  }
-//}
