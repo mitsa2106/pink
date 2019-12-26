@@ -11,11 +11,6 @@
 @import "blocks/contacts/contacts";
 @import "blocks/page-footer/page-footer";
 
-@font-face {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-}
 
 body {
   background: @bg-darkgrey url("../preview/pink-index-mobile.jpg") no-repeat 50% 0;
@@ -39,36 +34,3 @@ body {
     background-size: 1200px auto;
   }
 }
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.button {
-  display: inline-block;
-  font: inherit;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  //text-transform: uppercase;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: bold;
-  background-color: transparent;
-  box-sizing: border-box;
-}
-
