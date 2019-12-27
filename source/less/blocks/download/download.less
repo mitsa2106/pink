@@ -1,15 +1,19 @@
 .download {
   width: 320px;
+  //height: 462px;
   margin: 0 auto;
-  background-color: #283645;
-
-  //временно для сетки
-  min-height: 271px;
+  padding-top: 95px;
+  //padding-bottom: 176px;
+  background: url("../../../img/back-hand-mobile.png") no-repeat top center;
+  //background-size: cover;
+  background-color: @color-black;
 }
 
 .download__header {
   width: 280px;
-  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 367px; //462-95
+  background-color: @color-black;
 
   //временно для сетки
   min-height: 271px;
@@ -62,21 +66,18 @@
 
 @media (min-width: @tablet-width) {
   .download {
-    width: 340px;
-    position: relative;
+    width: 660px;
     padding: 0;
-    margin: 0;
-    margin-top: -618px;
-    background-color: transparent;
-
-    //временно для сетки
-    min-height: 618px;
+    padding-top: 110px;
+    background: url("../../../img/back-hand-tablet.png") no-repeat top center;
   }
 
   .download__header {
     width: 300px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
+    padding-left: 20px;
+    background-color: transparent;
 
     //временно для сетки
     min-height: 618px;
@@ -118,24 +119,20 @@
 
 @media (min-width: @desktop-width) {
   .download {
-    width: 320px;
+    width: 1200px;
+    height: 853px;
     padding: 0;
-    margin: 0;
-    margin-left: 120px;
-    margin-top: -744px;
-    background-color: transparent;
-
-    //временно для сетки
-    min-height: 744px;
+    background: url("../../../img/back-hand-desktop.png") no-repeat top center;
   }
 
   .download__header {
     width: 300px;
     margin: 0;
-    padding: 0 10px;
+    padding-top: 110px;
+    padding-left: 130px;
 
     //временно для сетки
-    min-height: 744px;
+    min-height: 618px;
   }
 
   .download__slogan {
