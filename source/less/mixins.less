@@ -1,12 +1,15 @@
 //color:
 @color-blue: #1d2631;
-@color-black: #283645;
+@color-black: #283645;   //основной цвет текста main-color
 @color-pink: #d22856;
 @color-grey: #f2f2f2;
 @color-green: #2aab6d;
+@light-pink: rgba(#d22856, 0.3);
 @color-link: rgb(210, 40, 86);
+@main-light: rgba(#283645, 0.1);
+@main-light-heading: rgba(#000000, 0.3);
 
-
+//mixin:
 .no-outline() {
   outline: none;
   background: transparent;
@@ -21,4 +24,26 @@
   padding: 0;
 
   list-style: none;
+}
+
+
+.font-light() {
+  font-family: "OpenSans Light", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+}
+
+.font-regular() {
+  font-family: "OpenSans Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: @color-black;
+}
+
+.font-bold() {
+  font-family: "OpenSans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  text-align: center;
 }
