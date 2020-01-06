@@ -1,0 +1,52 @@
+@media (min-width: @tablet-width) {
+  .copyright {
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__text {
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: bold;
+      color: @color-black;
+    }
+
+    &__link {
+      width: 27px;
+      height: 34px;
+      margin-left: 15px;
+    }
+  }
+
+  .copyright__link {
+    fill: @color-pink;
+
+    &:hover {
+      fill: @color-black;
+      opacity: 1;
+    }
+
+    &:active {
+      fill: @color-black;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    &__text {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    &__link {
+      margin-left: 10px;
+    }
+  }
+}

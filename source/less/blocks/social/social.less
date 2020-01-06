@@ -1,0 +1,55 @@
+@media (min-width: @tablet-width) {
+  .social {
+    width: 179px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social__list {
+    width: 179px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  .social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 51px;
+    height: 51px;
+    background-color: #fefefe;
+    border-radius: 50%;
+    border: 4px solid @color-grey;
+    box-sizing: border-box;
+
+    &:hover {
+      border-color: @color-black;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+
+    &--twitter {
+      background: url("../../../img/twitter.svg") no-repeat center;
+      background-size: 50%;
+    }
+
+    &--facebook {
+      background: url("../../../img/facebook.svg") no-repeat center;
+      background-size: 25%;
+    }
+
+    &--youtube {
+      background: url("../../../img/youtube.svg") no-repeat center;
+      background-size: 35%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {}
