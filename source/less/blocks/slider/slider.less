@@ -1,0 +1,90 @@
+.slider__toggles {
+  margin-top: 42px;
+  text-align: center;
+}
+
+.slider__toggle {
+  box-sizing: content-box;
+  width: 6px;
+  height: 6px;
+  margin-right: 19px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: @color-black;
+  opacity: 0.3;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--active {
+    background-color: white;
+    border: solid 3px @color-black;
+    opacity: 1;
+  }
+}
+
+.slider__btn {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .slider {
+    position: relative;
+  }
+
+  .slider__toggles {
+    display: none;
+  }
+
+  .slider__btn {
+    display: block;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .slider__btn--previous {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 22px;
+    height: 41px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-image: url("../../../img/left-arrow.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+
+  .slider__btn--next {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 22px;
+    height: 41px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-image: url("../../../img/right-arrow.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+
+  .slider__btn:hover {
+    opacity: 0.6;
+  }
+
+  .slider__btn:active {
+    opacity: 0.1;
+  }
+}
