@@ -14,9 +14,6 @@
   width: 320px;
   margin: 0;
   padding: 0;
-
-  //временно для сетки
-  min-height: 506px;
 }
 
 .price__inner {
@@ -29,6 +26,7 @@
   right: -273px;
   //bottom: -315px;
   border-collapse: collapse;
+  list-style: none;
 
   min-height: 279px;
 }
@@ -128,100 +126,102 @@
   background-size: contain;
 }
 
-.price__control {
-  position: relative;
-  margin: 0 auto;
-  width: 70px;
-  top: 435px;
+.price__toggles {
+  margin: 0;
 }
 
-.price__switcher {
-  visibility: hidden;
-}
-
-.slider__control-button {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    display: block;
-    //top: 5px;
-    //left: -16px;
-    width: 6px;
-    height: 6px;
-    background-color: #283645;
-    opacity: 0.3;
-    border-radius: 50%;
-  }
-
-  &:nth-of-type(1)::before {
-    top: 5px;
-    left: -16px;
-  }
-
-  &:nth-of-type(2)::before {
-    top: 5px;
-    left: -17px;
-  }
-
-  &:nth-of-type(3)::before {
-    top: 5px;
-    left: -14px;
-  }
-}
-
-.slider__control-button:hover::before {
-  opacity: 0.6;
-}
-
-.slider__control-button:active::before {
-  opacity: 0.1;
-}
-
-input[type="radio"]:checked + .slider__control-button:nth-of-type(1)::after {
-  position: absolute;
-  top: 3px;
-  left: -19px;
-  content: "";
-  display: block;
-  width: 5px;
-  height: 5px;
-  background-color: white;
-  border: 3px solid #283645;
-  border-radius: 50%;
-  opacity: 1;
-}
-
-input[type="radio"]:checked + .slider__control-button:nth-of-type(2)::after {
-  position: absolute;
-  top: 3px;
-  left: -19px;
-  content: "";
-  display: block;
-  width: 5px;
-  height: 5px;
-  background-color: white;
-  border: 3px solid #283645;
-  border-radius: 50%;
-}
-
-input[type="radio"]:checked + .slider__control-button:nth-of-type(3)::after {
-  position: absolute;
-  top: 2px;
-  left: -17px;
-  content: "";
-  display: block;
-  width: 5px;
-  height: 5px;
-  background-color: white;
-  border: 3px solid #283645;
-  border-radius: 50%;
-}
-
-input[type="radio"]:checked + .slider__control-button::before {
-  display: none;
-}
+//.price__control {
+//  position: relative;
+//  margin: 0 auto;
+//  width: 70px;
+//  top: 435px;
+//}
+//
+//.price__switcher {
+//  visibility: hidden;
+//}
+//
+//.slider__control-button {
+//  position: relative;
+//
+//  &::before {
+//    position: absolute;
+//    content: "";
+//    display: block;
+//    width: 6px;
+//    height: 6px;
+//    background-color: #283645;
+//    opacity: 0.3;
+//    border-radius: 50%;
+//  }
+//
+//  &:nth-of-type(1)::before {
+//    top: 5px;
+//    left: -16px;
+//  }
+//
+//  &:nth-of-type(2)::before {
+//    top: 5px;
+//    left: -17px;
+//  }
+//
+//  &:nth-of-type(3)::before {
+//    top: 5px;
+//    left: -14px;
+//  }
+//}
+//
+//.slider__control-button:hover::before {
+//  opacity: 0.6;
+//}
+//
+//.slider__control-button:active::before {
+//  opacity: 0.1;
+//}
+//
+//input[type="radio"]:checked + .slider__control-button:nth-of-type(1)::after {
+//  position: absolute;
+//  top: 3px;
+//  left: -19px;
+//  content: "";
+//  display: block;
+//  width: 5px;
+//  height: 5px;
+//  background-color: white;
+//  border: 3px solid #283645;
+//  border-radius: 50%;
+//  opacity: 1;
+//}
+//
+//input[type="radio"]:checked + .slider__control-button:nth-of-type(2)::after {
+//  position: absolute;
+//  top: 3px;
+//  left: -19px;
+//  content: "";
+//  display: block;
+//  width: 5px;
+//  height: 5px;
+//  background-color: white;
+//  border: 3px solid #283645;
+//  border-radius: 50%;
+//}
+//
+//input[type="radio"]:checked + .slider__control-button:nth-of-type(3)::after {
+//  position: absolute;
+//  top: 2px;
+//  left: -17px;
+//  content: "";
+//  display: block;
+//  width: 5px;
+//  height: 5px;
+//  background-color: white;
+//  border: 3px solid #283645;
+//  border-radius: 50%;
+//}
+//
+//input[type="radio"]:checked + .slider__control-button::before {
+//  display: none;
+//}
 
 @media (min-width: 660px) {
   .price {
@@ -296,9 +296,9 @@ input[type="radio"]:checked + .slider__control-button::before {
     top: 11px;
   }
 
-  .price__control {
-    display: none;
-  }
+  //.price__control {
+  //  display: none;
+  //}
 }
 
 @media (min-width: 1200px) {

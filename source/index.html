@@ -23,7 +23,7 @@
         </a>
       </div>
 
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -43,7 +43,7 @@
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="page-main page-main--nav-opened">
     <!--<h1 class="visually-hidden">PINK - приложение меняющее мир вокруг Вас</h1>-->
 
     <section class="download">
@@ -100,7 +100,7 @@
       <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
+          <blockquote class="reviews__item reviews__item--active slider__item">
             <p class="reviews__author-picture">
               <img class="reviews__author-image" src="img/quotes.svg" width="79" height="63" alt="Ковычки">
             </p>
@@ -108,27 +108,23 @@
             <p class="reviews__author-data">25 лет, водитель трамвая</p>
             <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </blockquote>
-          <!--<blockquote class="reviews__item slider__item">-->
-          <!--<p class="reviews__author-picture">-->
-          <!--<img class="reviews__author-image" src="img" width="79" height="63" alt="Ковычки">-->
-          <!--</p>-->
-          <!--<cite class="reviews__author-name">Дмитрий Амельченя</cite>-->
-          <!--<p class="reviews__author-data">29 лет, инженер</p>-->
-          <!--<p class="reviews__text">"Все супер, приложением доволен, друзьям рекомендую!"</p>-->
-          <!--</blockquote>-->
-          <!--<blockquote class="reviews__item slider__item">-->
-          <!--<p class="reviews__author-picture">-->
-          <!--<img class="reviews__author-image" src="img" width="79" height="63" alt="Ковычки">-->
-          <!--</p>-->
-          <!--<cite class="reviews__author-name">Юлия Сухарина</cite>-->
-          <!--<p class="reviews__author-data">32 года, консультант</p>-->
-          <!--<p class="reviews__text">"Приложение, которое поднимает настроение. Теперь я всегда в хорошем настроении, а также нашла себе новых друзей! :)"</p>-->
-          <!--</blockquote>-->
-
-          <!--<button class="reviews__prev" type="button">Предыдущий отзыв</button>-->
-          <!--<button class="reviews__next" type="button">Следующий отзыв</button>-->
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__author-picture">
+              <img class="reviews__author-image" src="img" width="79" height="63" alt="Ковычки">
+            </p>
+            <cite class="reviews__author-name">Дмитрий Амельченя</cite>
+            <p class="reviews__author-data">29 лет, инженер</p>
+            <p class="reviews__text">"Все супер, приложением доволен, друзьям рекомендую!"</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__author-picture">
+              <img class="reviews__author-image" src="img" width="79" height="63" alt="Ковычки">
+            </p>
+            <cite class="reviews__author-name">Юлия Сухарина</cite>
+            <p class="reviews__author-data">32 года, консультант</p>
+            <p class="reviews__text">"Приложение, которое поднимает настроение. Теперь я всегда в хорошем настроении, а также нашла себе новых друзей! :)"</p>
+          </blockquote>
         </div>
-
         <p class="reviews__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">1</span></button>
           <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
@@ -213,20 +209,17 @@
               </td>
             </tr>
           </table>
-          <div class="slider__control price__control">
-            <input class="price__switcher" type="radio" name="price" id="price-radio-1" checked>
-            <label class="slider__control-button slider__control-button--checked" for="price-radio-1">
-            </label>
-            <input class="price__switcher" type="radio" name="price" id="price-radio-2">
-            <label class="slider__control-button" for="price-radio-2">
-            </label>
-            <input class="price__switcher" type="radio" name="price" id="price-radio-3">
-            <label class="slider__control-button" for="price-radio-3">
-            </label>
-          </div>
+
+          <!--<div class="slider__control price__control">-->
+            <!--<input class="price__switcher" type="radio" name="price" id="price-radio-1" checked>-->
+            <!--<label class="slider__control-button slider__control-button&#45;&#45;checked" for="price-radio-1"></label>-->
+            <!--<input class="price__switcher" type="radio" name="price" id="price-radio-2">-->
+            <!--<label class="slider__control-button" for="price-radio-2"></label>-->
+            <!--<input class="price__switcher" type="radio" name="price" id="price-radio-3">-->
+            <!--<label class="slider__control-button" for="price-radio-3"></label>-->
+          <!--</div>-->
         </div>
       </div>
-
       <!--<div class="price__wrapper slider">-->
       <!-- первый вариант решения таблицы прайса-->
       <!--<table class="price__table table slider__list">-->
@@ -255,13 +248,12 @@
       <!--<td class="table__function table__function--yes slider__item"></td>-->
       <!--</tr>-->
       <!--</table>-->
-
-      <!--<p class="price__toggles slider__toggles">-->
-      <!--<button class="slider__toggle" type="button">1</button>-->
-      <!--<button class="slider__toggle" type="button">2</button>-->
-      <!--<button class="slider__toggle" type="button">3</button>-->
-      <!--</p>-->
       <!--</div>-->
+      <p class="price__toggles slider__toggles">
+        <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
+        <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">2</span></button>
+        <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
+      </p>
     </section>
 
     <section class="contacts">
