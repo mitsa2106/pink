@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: @main-light-heading;
 
   min-height: 69px;
 }
@@ -16,11 +15,12 @@
   margin: 0 auto;
   padding-left: 20px;
   box-shadow: 0 1px #000000;
+  background-color: @main-light-heading;
 }
 
-.page-header__logo-wrap--nav-opened {
-  background-color: @color-black;
-}
+//.page-header__logo-wrap--nav-opened {
+//  background-color: @color-black;
+//}
 
 @media (min-width: @tablet-width) {
   .page-header__logo-wrap {
@@ -35,13 +35,14 @@
     flex-direction: row;
     width: 100%;
     min-height: 110px;
-    background-color: @main-light-heading;
   }
 
   .page-header__wrapper {
     display: flex;
-    width: 941px;
+    width: 940px;
+    padding: 0 130px;
     margin: 0 auto;
+    background-color: @main-light-heading;
   }
 
   .page-header__logo-wrap {
@@ -52,152 +53,3 @@
     box-shadow: none;
   }
 }
-
-//.page-header {
-//  width: 320px;
-//  margin: 0 auto;
-//  margin-top: 260px;
-//  background: url("../../../img/back-hand-mobile.png") no-repeat 50% 0;
-//  position: relative;
-//
-//  //временно для сетки
-//  min-height: 462px;
-//}
-//
-//.page-header__wrapper {
-//  margin: 0;
-//  margin-top: -260px;
-//  position: absolute;
-//}
-//
-//.page-header__list {
-//  .reset-list();
-//  display: flex;
-//  flex-direction: row;
-//  justify-content: space-between;
-//  width: 280px;
-//  padding: 0 20px;
-//  background: url("../../../img/Layer 157 header-mobile.png") no-repeat 50% 0,
-//    rgba(0, 0, 0, 0.3);
-//
-//  //временно для сетки
-//  min-height: 70px;
-//}
-//
-//.page-header__logo {
-//  min-width: 74px;
-//  margin-top: 22px;
-//}
-//
-//.page-header__logo-logo {
-//  display: inline-block;
-//  margin: 0;
-//  padding: 0;
-//  min-width: 75px;
-//  min-height: 22px;
-//  background: url("../../../img/logotype-white-mobile.svg") no-repeat center;
-//}
-//
-//.page-header__burger {
-//  margin-top: 21px;
-//}
-//
-//@media (min-width: @tablet-width) {
-//  .page-header {
-//    min-width: 660px;
-//    margin-top: 255px;
-//    background: url("../../../img/back-hand-tablet.png") no-repeat 50% 0;
-//    position: relative;
-//
-//    //временно для сетки
-//    min-height: 729px;
-//  }
-//
-//  .page-header__wrapper {
-//    width: 660px;
-//    margin-top: -255px;
-//    position: absolute;
-//  }
-//
-//  .page-header__list {
-//    width: 620px;
-//    padding: 0 20px;
-//    margin: 0 auto;
-//    background: url("../../../img/Layer 157 header-tablet.png") no-repeat 50% 0,
-//      rgba(0, 0, 0, 0.3);
-//
-//    //временно для сетки
-//    height: 110px;
-//  }
-//
-//  .page-header__logo {
-//    width: 147px;
-//    height: 40px;
-//    margin-top: 27px;
-//  }
-//
-//  .page-header__logo-logo {
-//    min-width: 147px;
-//    min-height: 40px;
-//    background: url("../../../img/logotype-white-tablet.svg") no-repeat center;
-//  }
-//
-//  .page-header__burger {
-//    margin-top: 45px;
-//  }
-//}
-//
-//@media (min-width: @desktop-width) {
-//  .page-header {
-//    min-width: 1200px;
-//    margin: 0 auto;
-//    background: url("../../../img/back-hand-desktop.png") no-repeat 50% 0;
-//    position: relative;
-//
-//    //временно для сетки
-//    min-height: 853px;
-//  }
-//
-//  .page-header__wrapper {
-//    position: absolute;
-//    width: 940px;
-//    padding: 0 130px;
-//    margin: 0 auto;
-//    display: flex;
-//    flex-direction: row;
-//    justify-content: space-between;
-//    background: rgba(0, 0, 0, 0.3);
-//
-//    //временно для сетки
-//    min-height: 110px;
-//  }
-//
-//  .page-header__list {
-//    width: 150px;
-//    margin: 0;
-//    padding: 0;
-//    background: transparent;
-//  }
-//
-//  .page-header__logo {
-//    min-width: 150px;
-//  }
-//
-//  .page-header__logo-logo {
-//    min-width: 147px;
-//    min-height: 40px;
-//    background: url("../../../img/logotype-white-desktop.svg") no-repeat center, transparent;
-//  }
-//
-//  .page-header__logo-image {
-//    display: none;
-//  }
-//}
-//
-//.page-header,
-//.page-header__wrapper,
-//.page-header__list,
-//.page-header__logo,
-//.page-header__burger {
-//  .no-outline();
-//}

@@ -15,7 +15,7 @@
   <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <div class="page-header__logo-wrap">
+      <div class="page-header__logo-wrap page-header__logo-wrap--nav-opened">
         <a class="logo">
           <svg class="logo__logo-image logo__logo-image--mobile" width="75" height="22" alt="Приложение Pink"><use xlink:href="sprite.svg#logotype-white-mobile"></use></svg>
           <svg class="logo__logo-image logo__logo-image--tablet" width="147" height="40" alt="Приложение Pink"><use xlink:href="sprite.svg#logotype-white-tablet"></use></svg>
@@ -23,8 +23,8 @@
         </a>
       </div>
 
-      <nav class="main-nav main-nav--opened">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a href="index.html">Главная</a>
@@ -52,9 +52,15 @@
         <b class="download__slogan">Взгляните на жизнь иначе!</b>
         <a href="#" class="download__button button">Скачать приложение</a>
         <div class="download__icon">
-          <img class="download__icon-apple" src="img/apple-logo.svg" width="47" height="56" alt="apple">
-          <img class="download__icon-android" src="img/android-logo.svg" width="43" height="47" alt="android">
-          <img class="download__icon-windows" src="img/microsoft-logo.svg" width="44" height="41" alt="windows">
+          <a href="https://www.apple.com/ios/app-store/" target="blank">
+            <img class="download__icon-apple" src="img/apple-logo.svg" width="47" height="56" alt="apple">
+          </a>
+          <a href="https://play.google.com/store" target="blank">
+            <img class="download__icon-android" src="img/android-logo.svg" width="43" height="47" alt="android">
+          </a>
+          <a href="https://www.microsoft.com/ru-ru/store/apps/windows" target="blank">
+            <img class="download__icon-windows" src="img/microsoft-logo.svg" width="44" height="41" alt="windows">
+          </a>
         </div>
         <p class="download___description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </header>
@@ -220,35 +226,6 @@
           <!--</div>-->
         </div>
       </div>
-      <!--<div class="price__wrapper slider">-->
-      <!-- первый вариант решения таблицы прайса-->
-      <!--<table class="price__table table slider__list">-->
-      <!--<tr> <!--1 строка-->
-      <!--<td class="table__title table__title--empty"></td>-->
-      <!--<td class="table__package slider__item">База<br> 1,99USD</td>-->
-      <!--<td class="table__package slider__item">Стандарт<br> 3,99 USD</td>-->
-      <!--<td class="table__package slider__item">Анлим<br> 9,99 USD</td>-->
-      <!--</tr>-->
-      <!--<tr> <!-- 2 строка-->
-      <!--<td class="table__title slider__item">Розовый фильтр</td>-->
-      <!--<td class="table__function table__function--yes slider__item"></td>-->
-      <!--<td class="table__function table__function--yes slider__item"></td>-->
-      <!--<td class="table__function table__function--yes slider__item"></td>-->
-      <!--</tr>-->
-      <!--<tr> <!-- 3 строка-->
-      <!--<td class="table__title slider__item">Смайлики</td>-->
-      <!--<td class="table__function table__function--no slider__item"></td>-->
-      <!--<td class="table__function table__function--yes slider__item"></td>-->
-      <!--<td class="table__function table__function--yes slider__item"></td>-->
-      <!--<</tr>-->
-      <!--<tr> <!-- 4 строка-->
-      <!--<td class="table__title slider__item">Комментарии</td>-->
-      <!--<td class="table__function table__function--no slider__item"></td>-->
-      <!--<td class="table__function table__function--no slider__item"></td>-->
-      <!--<td class="table__function table__function--yes slider__item"></td>-->
-      <!--</tr>-->
-      <!--</table>-->
-      <!--</div>-->
       <p class="price__toggles slider__toggles">
         <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
         <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">2</span></button>
