@@ -1,6 +1,7 @@
 .main-background {
   padding: 0;
   background-image: url("../../../img/back-mobile@1x.jpg");
+  //background-image: url("../../../img/back-bg@1x.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -8,17 +9,15 @@
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../../../img/back-mobile@2x.jpg");
-    background-size: 640px auto;
+    background-size: 640px auto; //или? 320px auto
+    //background-image: url("../../../img/back-bg@2x.jpg");
+    //background-size: 2560px auto;
   }
 }
 
 .main-background--photo-page,
 .main-background--form-page {
   height: 237px;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    height: 474px;
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -29,17 +28,13 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../../../img/back-tablet@2x.jpg");
-      background-size: 1320px auto;
+      background-size: 1320px auto; //или? 660px auto
     }
   }
 
   .main-background--photo-page,
   .main-background--form-page {
     height: 440px;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      height: 880px;
-    }
   }
 }
 
@@ -51,16 +46,12 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../../../img/back-desktop@2x.jpg");
-      background-size: 2400px auto;
+      background-size: 2400px auto; //или? 1200px auto
     }
   }
 
   .main-background--photo-page,
   .main-background--form-page {
     height: 394px;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      height: 788px;
-    }
   }
 }
