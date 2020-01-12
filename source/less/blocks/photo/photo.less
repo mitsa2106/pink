@@ -1,0 +1,118 @@
+.photo {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  //background-color: white;
+}
+
+.photo-center {
+  width: 280px;
+  padding: 0 20px;
+}
+
+.photo___description {
+  .font-regular;
+  margin: 45px auto 49px;
+  padding: 0 20px;
+}
+
+.photo__list {
+  display: flex;
+  flex-direction: column;
+  .reset-list;
+}
+
+.photo__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.photo__item--view-of-day img {
+  position: relative;
+}
+
+.photo__item--view-of-day {
+  position: relative;
+  align-items: center;
+
+  &::after {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 140px;
+    height: 36px;
+    padding-top: 3px;
+
+    .font-regular;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    background-color: @color-pink;
+  }
+}
+
+.photo-list__image {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    width: 660px;
+  }
+
+  .photo-center {
+    width: 620px;
+  }
+
+  .photo___description {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 93px auto 76px;
+    padding: 0 40px;
+  }
+
+  .photo-list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .photo__item--view-of-day {
+    width: 660px;
+    margin: 0 auto;
+
+    &::after {
+      top: 57px;
+      right: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    width: 1200px;
+  }
+
+  .photo-center {
+    width: 940px;
+    padding: 0 130px;
+  }
+
+  .photo___description {
+    margin: 93px auto 88px;
+    padding: 0 170px;
+  }
+
+  .photo__item--view-of-day {
+    width: 1200px;
+
+    &::after {
+      top: 54px;
+      right: 130px;
+    }
+  }
+}
+
