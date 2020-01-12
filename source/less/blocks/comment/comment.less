@@ -1,0 +1,126 @@
+.comment {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  color: @color-black;
+  background-color: @color-grey;
+  margin: 0 auto;
+}
+
+.comment__wrapper {
+  padding-left: 18px;
+  padding-top: 15px;
+  padding-right: 22px;
+  padding-bottom: 8px;
+  margin: 0;
+}
+
+.comment__author-name {
+  .font-bold;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  font-style: normal;
+}
+
+.comment__time {
+  .font-light;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.comment__text {
+  margin: 0;
+
+  .font-regular;
+  line-height: 24px;
+  text-align: left;
+}
+
+.comment__likes {
+  .font-regular;
+  margin: 0;
+  padding-left: 50px;
+  padding-bottom: 21px;
+  //bottom: 0;
+
+  font-size: 12px;
+  line-height: 24px;
+  text-align: left;
+  color: @color-pink;
+  background-image: url("../../../img/icon-heart.svg");
+  background-size: 13px 12px;
+  background-repeat: no-repeat;
+  background-position: left 18px top 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .comment {
+    width: 300px;
+    position: relative;
+
+    min-height: 155px;
+  }
+
+  .comment__wrapper {
+    padding-left: 27px;
+    padding-top: 20px;
+    padding-right: 27px;
+    padding-bottom: 10px;
+  }
+
+  .comment__wrapper--panorama {
+    padding-left: 27px;
+    padding-top: 24px;
+    padding-right: 27px;
+    padding-bottom: 20px;
+  }
+
+  .comment--panorama {
+    position: relative;
+    width: 620px;
+
+    min-height: 121px;
+  }
+
+  .comment__likes--panorama {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    min-width: 120px;
+    padding: 0;
+    padding-right: 18px;
+
+    background-image: url("../../../img/icon-heart.svg");
+    background-size: 13px 12px;
+    background-repeat: no-repeat;
+    background-position: right 27px top 5px;
+  }
+
+  .comment__likes {
+    position: absolute;
+    bottom: 25px;
+    min-width: 240px;
+
+    padding-left: 27px;
+    padding-bottom: 0;
+    //padding-bottom: 25px;
+
+    //background-position: right 32px top 5px;
+    background-position: right 0 top 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment__wrapper--panorama {
+    padding-top: 22px;
+  }
+
+  .comment--panorama {
+    position: relative;
+    width: 940px;
+    min-height: 96px;
+  }
+}
