@@ -1,0 +1,87 @@
+.filter-icons {
+  .reset-list;
+  display: flex;
+  justify-content: space-around;
+  width: 240px;
+  margin: auto;
+  margin-bottom: 73px;
+}
+
+.filter-icons__item {
+  position: relative;
+}
+
+.filter-icons__img {
+  fill: @color-pink;
+
+  &:hover {
+    fill: @color-black;
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .filter-icons {
+    flex-direction: column;
+    width: 275px;
+    margin: 0;
+  }
+
+  .filter-icons__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .filter-icons__img--crop {
+    width: 22px;
+    height: 22px;
+  }
+
+  .filter-icons__img--fill {
+    width: 24px;
+    height: 22px;
+  }
+
+  .filter-icons__img--contrast {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filter-icons {
+    width: 410px;
+  }
+
+  .filter-icons__item {
+    margin-bottom: 25px;
+
+    //&:last-child {
+    //  margin-bottom: 160px;
+    //}
+  }
+
+  .filter-icons__img--crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  .filter-icons__img--fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .filter-icons__img--contrast {
+    width: 32px;
+    height: 32px;
+  }
+}
