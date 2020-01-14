@@ -111,6 +111,10 @@
       right: 20px;
     }
   }
+
+  .photo__item:nth-last-child(-n+2) { /* последние 2 потомка */
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -146,6 +150,10 @@
       top: 54px;
       right: 130px;
     }
+  }
+
+  .photo__item:nth-last-child(-n+3) { /* последние 3 потомка */
+    margin-bottom: 0;
   }
 }
 
