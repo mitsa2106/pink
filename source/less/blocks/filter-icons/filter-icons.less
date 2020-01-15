@@ -4,7 +4,7 @@
   justify-content: space-around;
   width: 240px;
   margin: auto;
-  margin-bottom: 73px;
+  margin-bottom: 111px;
 }
 
 .filter-icons__item {
@@ -29,6 +29,7 @@
     flex-direction: column;
     width: 275px;
     margin: 0;
+    margin-bottom: 80px;
   }
 
   .filter-icons__item {
@@ -49,25 +50,26 @@
   .filter-icons__img--fill {
     width: 24px;
     height: 22px;
+    position: relative;
+    top: -2px;
   }
 
   .filter-icons__img--contrast {
     width: 16px;
     height: 16px;
+    position: relative;
+    top: -11px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .filter-icons {
     width: 410px;
+    margin-bottom: 160px;
   }
 
   .filter-icons__item {
     margin-bottom: 25px;
-
-    //&:last-child {
-    //  margin-bottom: 160px;
-    //}
   }
 
   .filter-icons__img--crop {
@@ -78,10 +80,14 @@
   .filter-icons__img--fill {
     width: 48px;
     height: 43px;
+    position: relative;
+    top: 0;
   }
 
   .filter-icons__img--contrast {
     width: 32px;
     height: 32px;
+    position: relative;
+    top: 0;
   }
 }

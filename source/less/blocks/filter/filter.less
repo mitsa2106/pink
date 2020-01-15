@@ -37,7 +37,7 @@
 }
 
 .filter__scale {
-  margin-top: 32px;
+  margin-top: 34px;
 
   &--fill,
   &--contrast {
@@ -60,7 +60,9 @@
 
   &--cancel {
     color: @main-light;
+    color: #2aab6d;
     border-color: @main-light;
+    border-color: #2aab6d;
   }
 
   &--edit {
@@ -118,6 +120,27 @@
   .filter__post-buttons {
     margin-top: auto;
   }
+
+  .filter__btn {
+    &--post {
+      width: 260px;
+      margin: 0 auto;
+      margin-bottom: 24px;
+    }
+
+    &--cancel {
+      width: 260px;
+      margin: 0 auto;
+    }
+
+    &--edit {
+      width: 44px;
+      padding: 0;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -151,8 +174,8 @@
   }
 
   .filter__post-buttons {
-    display: flex;
     width: 410px;
+    display: flex;
     justify-content: space-between;
   }
 
@@ -164,6 +187,7 @@
 
     &--cancel {
       width: 183px;
+      margin: 0;
     }
   }
 }
