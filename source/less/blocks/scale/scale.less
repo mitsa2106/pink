@@ -1,0 +1,167 @@
+.scale {
+  position: absolute;
+  height: 10px;
+  left: -20px;
+}
+
+.scale__bar {
+  width: 240px;
+  height: 2px;
+  background-color: black;
+}
+
+.scale__toggle {
+  position: absolute;
+  top: -7px;
+  left: 80%;
+  width: 12px;
+  height: 12px;
+  border: solid 2px @color-pink;
+  border-radius: 50%;
+  background-color: @main-light;
+
+  &:active {
+    background-color: @color-pink;
+  }
+}
+
+.scale-bottom {
+  position: absolute;
+  height: 2px;
+  width: 320px;
+  background-color: @main-light;
+  background-color: #2aab6d;
+
+  &--index {
+    left: -58px;
+    top: 120px;
+  }
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .scale {
+    position: relative;
+    margin-top: 3px;
+    left: -7px;
+  }
+
+  .scale__bar {
+    width: 202px;
+    position: absolute;
+    left: -202px;
+
+    &--crop {
+      top: 8px;
+    }
+
+    &--fill {
+      top: 2px;
+    }
+
+    &--contrast {
+      top: -6px;
+    }
+  }
+
+  .scale__toggle {
+    &--crop {
+      left: -55px;
+      top: 0;
+    }
+
+    &--fill {
+      left: -175px;
+      top: -5px;
+    }
+
+    &--contrast {
+      left: -105px;
+      top: -13px;
+    }
+  }
+
+  .scale-bottom {
+    width: 275px;
+    left: 10px;
+
+    &--index {
+      top: 45px;
+    }
+
+    &--tablet {
+      display: block;
+      top: 40px;
+    }
+
+    &--desktop {
+      display: block;
+      top: 34px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .scale {
+    position: relative;
+    margin-top: 10px;
+    left: -116px;
+  }
+
+  .scale__bar {
+    width: 288px;
+    left: -202px;
+
+    &--crop {
+      top: 8px;
+    }
+
+    &--fill {
+      top: 7px;
+    }
+
+    &--contrast {
+      top: 5px;
+    }
+  }
+
+  .scale__toggle {
+    &--crop {
+      left: -130px;
+      top: 0;
+    }
+
+    &--fill {
+      left: 45px;
+      top: 0;
+    }
+
+    &--contrast {
+      left: -43px;
+      top: -3px;
+    }
+  }
+
+  .scale-bottom {
+    width: 410px;
+    left: 0;
+
+    &--index {
+      top: 55px;
+    }
+
+    &--tablet {
+      display: block;
+      top: 54px;
+    }
+
+    &--desktop {
+      display: block;
+      top: 50px;
+    }
+  }
+}
