@@ -4,7 +4,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  //background-color: white;
+  background-color: white;
 }
 
 .filter__center {
@@ -20,7 +20,7 @@
 
 .filter__background {
   width: 320px;
-  //background-color: @color-grey;
+  background-color: @color-grey;
 }
 
 .filter__wrapper {
@@ -51,27 +51,49 @@
 
 .filter__btn {
   width: 280px;
+}
 
-  &--post {
-    margin-bottom: 10px;
-    color: @color-pink;
+.filter__btn--post {
+  margin-bottom: 10px;
+  color: @color-pink;
+  border-color: @color-pink;
+
+  &:hover {
+    color: white;
     border-color: @color-pink;
+    background-color: @color-pink;
   }
 
-  &--cancel {
-    color: @main-light;
-    color: #2aab6d;
-    border-color: @main-light;
-    border-color: #2aab6d;
+  &:active {
+    color: white;
+    border-color: @color-pink;
+    background-color: @color-pink;
+    opacity: 0.3;
+  }
+}
+
+.filter__btn--cancel {
+  color: @main-light;
+  border-color: @main-light;
+
+  &:hover {
+    color: @main-light-2;
+    border-color: @main-light-2;
   }
 
-  &--edit {
-    width: 44px;
-    padding: 0;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  &:active {
+    color: white;
+    border-color: @main-light-2;
+    background-color: @main-light-2;
   }
+}
+
+.filter__btn--edit {
+  width: 44px;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
@@ -121,25 +143,19 @@
     margin-top: auto;
   }
 
-  .filter__btn {
-    &--post {
-      width: 260px;
-      margin: 0 auto;
-      margin-bottom: 24px;
-    }
+  .filter__btn--post {
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
 
-    &--cancel {
-      width: 260px;
-      margin: 0 auto;
-    }
+  .filter__btn--cancel {
+    width: 260px;
+    margin: 0 auto;
+  }
 
-    &--edit {
-      width: 44px;
-      padding: 0;
-      border: none;
-      outline: none;
-      cursor: pointer;
-    }
+  .filter__btn--edit {
+    width: 44px;
   }
 }
 
@@ -179,15 +195,14 @@
     justify-content: space-between;
   }
 
-  .filter__btn {
-    &--post {
-      width: 183px;
-      margin: 0;
-    }
+  .filter__btn--post {
+    width: 183px;
+    margin: 0;
+  }
 
-    &--cancel {
-      width: 183px;
-      margin: 0;
-    }
+  .filter__btn--cancel {
+    width: 183px;
+    margin: 0;
   }
 }
+
