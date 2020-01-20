@@ -48,10 +48,10 @@
     </div>
     <section class="contest">
       <div class="contest-center">
-        <p class="contest___description">Поделитесь своей историей и получите шанс выйграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <p class="contest___description">Поделитесь своей историей и получите шанс выйграть ценный приз — 1000 миль на вашу бонусную карту! <span class="contest___description contest___description--mobile-hide">Пожалуйста, заполните форму ниже:</span></p>
       </div>
       <form class="contest__form form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__block block-name">
+        <div class="form__block block-name">
           <legend class="visually-hidden">ФИО участника конкурса</legend>
           <ul class="block-name__list">
             <li class="block-name__item">
@@ -70,7 +70,7 @@
                      placeholder="Ну и отчество тоже">
             </li>
           </ul>
-        </fieldset>
+        </div>
         <fieldset class="form__block block-device">
           <legend class="block-device__title">С каким приложением путешествовали?</legend>
           <ul class="block-device__list">
@@ -142,8 +142,13 @@
           <label class="block-comments__label label__textarea" for="form-textarea"></label>
           <textarea class="block-comments__textarea" rows="5" cols="50" name="text" id="form-textarea" placeholder="Можно прямо в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <input class="form__button btn-style" type="submit" value="Отправить форму">
-        <span>* - Обязательные поля</span>
+
+        <div class="form__item form__item--bottom">
+          <button class="button button--green form__btn form__btn--submit" type="submit"><span class="button__text">Отправить форму</span></button>
+          <small class="form__note">
+            <sup>*</sup> — обязательные <span class="form__note form__note--hidden">для заполнения</span> поля
+          </small>
+        </div>
       </form>
     </section>
   </main>

@@ -1,0 +1,56 @@
+.contest {
+  .reset-list;
+  margin: 0 auto;
+  width: 320px;
+  //background-color: white;
+}
+
+.contest-center {
+  width: 280px;
+  padding: 0 20px;
+}
+
+.contest___description {
+  .font-regular;
+  margin: 45px auto 33px;
+
+  &--mobile-hide {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contest {
+    width: 660px;
+  }
+
+  .contest-center {
+    width: 520px;
+    margin: auto;
+  }
+
+  .contest___description {
+    font-size: 18px;
+    margin: 94px auto 70px;
+
+    &--mobile-hide {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest {
+    width: 1200px;
+  }
+
+  .contest-center {
+    width: 760px;
+    margin: auto;
+  }
+
+  .contest___description {
+    font-size: 18px;
+    margin: 94px auto 83px;
+  }
+}
