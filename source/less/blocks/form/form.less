@@ -1,4 +1,106 @@
 .form {
   display: flex;
   flex-direction: column;
+  //background-color: white;
 }
+
+.form-name__list,
+.form-contact__list {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 42px;
+}
+
+.form-name__item,
+.form-contact__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 17px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--bottom {
+    align-items: center;
+  }
+}
+
+.form-name__label,
+.form-contact__label {
+  padding-left: 23px;
+  margin-bottom: 5px;
+
+  .font-regular;
+  text-align: left;
+  color: @color-pink;
+  text-transform: uppercase;
+}
+
+.form-name__input,
+.form-contact__input,
+.form__input {
+  width: 280px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-right: 18px;
+  padding-bottom: 15px;
+
+  .font-regular;
+  font-size: 18px;
+  text-align: left;
+  border: solid 2px @grey-border;
+  outline: none;
+
+  &--textarea {
+    height: 200px;
+    padding-left: 18px;
+    padding-bottom: 3px;
+  }
+
+  &::placeholder {
+    .font-regular;
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+.form-name__input:hover,
+.form-contact__input:hover {
+  border-color: @color-black;
+}
+
+.form-name__input:focus,
+.form-contact__input:focus {
+  border-color: @color-pink;
+}
+
+.form__button {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 17px;
+  align-items: center;
+}
+
+.form__note {
+  display: block;
+  .font-regular;
+  text-transform: uppercase;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.form__note sup {
+  color: @color-pink;
+}
+
+.form__btn {
+  display: block;
+  min-height: 63px;
+  margin-bottom: 25px;
+}
+
