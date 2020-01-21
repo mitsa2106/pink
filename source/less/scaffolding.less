@@ -78,4 +78,27 @@ input[type="radio"].visually-hidden {
   border: solid 3px white;
   border-radius: 50px;
   cursor: pointer;
+
+  &--green {
+    width: 280px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    border: none;
+    border-radius: 3px;
+    background-color: @color-green;
+    text-transform: uppercase;
+    line-height: 30px;
+
+    &:hover {
+      background-color: @hover-green;
+    }
+
+    &:active .button__text {
+      opacity: 0.3;
+    }
+
+    &:disabled {
+      background-color: @grey-border;
+    }
+  }
 }
