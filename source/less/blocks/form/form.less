@@ -46,12 +46,13 @@
   padding-left: 20px;
   padding-top: 14px;
   padding-right: 18px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 
   .font-regular;
   font-size: 18px;
   text-align: left;
   border: solid 2px @grey-border;
+  border-radius: 3px;
   outline: none;
 
   &--textarea {
@@ -101,6 +102,104 @@
 .form__btn {
   display: block;
   min-height: 63px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
+
+@media (min-width: @tablet-width) {
+  .form-name__list {
+    width: 620px;
+    margin-bottom: 42px;
+  }
+
+  .form-name__item {
+    flex-direction: row;
+    margin-bottom: 55px;
+
+    &--bottom {
+      align-items: center;
+    }
+  }
+
+  .form-name__label {
+    padding-left: 0;
+    padding-top: 18px;
+    margin: 0;
+  }
+
+  .form-name__input {
+    width: 620px;
+    padding-left: 23px;
+  }
+
+  .form-contact__list {
+    width: 500px;
+    padding: 0 60px;
+    margin-bottom: 25px;
+  }
+
+  .form-contact__item {
+    margin-bottom: 30px;
+  }
+
+  .form-contact__label {
+    padding-left: 20px;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  .form-contact__input {
+    width: 500px;
+    order: -1;
+  }
+
+  .form__input {
+    width: 500px;
+
+    &--textarea {
+      height: 190px;
+      padding-left: 18px;
+      padding-bottom: 3px;
+      margin-left: 60px;
+      margin-bottom: 45px;
+    }
+  }
+
+  .form__button {
+    width: 620px;
+    padding: 0 20px;
+    margin-top: 24px; //68-44=24
+    margin-bottom: 57px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    order: 6;
+  }
+
+  .form__btn {
+    margin: 0;
+    width: 300px;
+  }
+
+  .form__name {
+    order: 1;
+  }
+
+  .form__fieldset--device {
+    order: 2;
+  }
+
+  .form__fieldset--contact {
+    order: 3;
+  }
+
+  .form__fieldset--achievements {
+    order: 4;
+  }
+
+  .form__fieldset--comments {
+    order: 5;
+  }
+}
+
+@media (min-width: @desktop-width) {}
 
