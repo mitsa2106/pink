@@ -213,4 +213,63 @@
   }
 }
 
-@media (min-width: @desktop-width) {}
+@media (min-width: @desktop-width) {
+  .fieldset-wrapper {
+    padding: 0;
+    padding-bottom: 57px;
+    width: 940px;
+
+    &--device {
+      width: 435px;
+    }
+
+    &--contact {
+      width: 940px;
+    }
+  }
+
+  .fieldset__radio + label {
+    padding: 0 0 0 73px;
+  }
+
+  .fieldset__radio + label::before {
+    left: 15px;
+  }
+
+  .fieldset__radio:checked + label::after {
+    left: 28px;
+  }
+
+  .fieldset__title {
+    &--contact {
+      margin-bottom: 35px;
+    }
+
+    &--comments {
+      margin-bottom: 35px;
+    }
+  }
+
+  .fieldset__list--achievements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 60px;
+    margin-bottom: 12px;
+  }
+
+  .fieldset__item--achievements {
+    width: 260px;
+    padding: 0;
+    margin-bottom: 47px;
+  }
+
+  .fieldset__checkbox + label {
+    padding: 0 0 0 60px;
+  }
+
+  .fieldset__checkbox--checked-icon {
+    left: 10px;
+  }
+}

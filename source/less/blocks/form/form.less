@@ -201,5 +201,71 @@
   }
 }
 
-@media (min-width: @desktop-width) {}
+@media (min-width: @desktop-width) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 940px;
+    padding: 0 130px;
+    margin: 0  auto;
+  }
+
+  .form-name__list {
+    width: 433px;
+    margin: 0;
+    padding: 0;
+    padding-top: 12px;
+  }
+
+  .form-name__label {
+    padding-right: 20px;
+  }
+
+  .form-contact__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 820px;
+    padding: 0 60px;
+    margin-bottom: 13px;
+  }
+
+  .form-contact__item {
+    margin-bottom: 0;
+  }
+
+  .form-contact__input {
+    width: 375px;
+  }
+
+  .form__input {
+    width: 820px;
+
+    &--textarea {
+      height: 125px;
+      padding-left: 20px;
+      margin-right: 60px;
+      margin-bottom: 36px;
+    }
+  }
+
+  .form__button {
+    width: 940px;
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
+  .form__btn {
+    margin: 0;
+    width: 300px;
+  }
+
+  .form__note--hidden {
+    display: inline;
+  }
+}
 
