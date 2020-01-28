@@ -5,11 +5,12 @@
     <title>Конкурс путешествий в приложении PINK</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel = "stylesheet"
-        type = "text/css"
-        href = "css/outlines.css" />
+    <link rel="stylesheet" type="text/css" href="css/outlines.css">
   </head>
   <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo-wrap page-header__logo-wrap--nav-opened">
@@ -56,18 +57,15 @@
           <ul class="form-name__list">
             <li class="form-name__item">
               <label class="form-name__label" for="family">Фамилия:</label>
-              <input class="form-name__input" id="family" type="text" name="family"
-                     placeholder="Укажите фамилию*" required>
+              <input class="form-name__input" id="family" type="text" name="family" placeholder="Укажите фамилию*" required="">
             </li>
             <li class="form-name__item">
               <label class="form-name__label" for="name">Имя:</label>
-              <input class="form-name__input" id="name" type="text" name="name"
-                     placeholder="Введите ваше имя*" required>
+              <input class="form-name__input" id="name" type="text" name="name" placeholder="Введите ваше имя*" required="">
             </li>
             <li class="form-name__item">
               <label class="form-name__label" for="patronymic">Отчество:</label>
-              <input class="form-name__input" id="patronymic" type="text" name="patronymic"
-                     placeholder="Ну и отчество тоже">
+              <input class="form-name__input" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
             </li>
           </ul>
         </div>
@@ -77,38 +75,32 @@
             <legend class="fieldset__title fieldset__title--achievements">Ваши безбашенные достижения в путешествии</legend>
             <ul class="fieldset__list fieldset__list--achievements">
               <li class="fieldset__item fieldset__item--achievements">
-                <input class="fieldset__checkbox" name="selfie" id="selfie"
-                       type="checkbox" checked>
+                <input class="fieldset__checkbox" name="selfie" id="selfie" type="checkbox" checked="">
                 <label for="selfie">Сделал селфи с акулой</label>
                 <svg class="fieldset__checkbox fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
               </li>
               <li class="fieldset__item fieldset__item--achievements">
-                <input class="fieldset__checkbox" name="burn" id="burn"
-                       type="checkbox" checked>
+                <input class="fieldset__checkbox" name="burn" id="burn" type="checkbox" checked="">
                 <label for="burn">Обгорел на пляже</label>
                 <svg class="fieldset__checkbox fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
               </li>
               <li class="fieldset__item fieldset__item--achievements">
-                <input class="fieldset__checkbox" name="see" id="see"
-                       type="checkbox">
+                <input class="fieldset__checkbox" name="see" id="see" type="checkbox">
                 <label for="see">Видел Чака Норриса</label>
                 <svg class="fieldset__checkbox fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
               </li>
               <li class="fieldset__item fieldset__item--achievements">
-                <input class="fieldset__checkbox" name="buy" id="buy"
-                       type="checkbox">
+                <input class="fieldset__checkbox" name="buy" id="buy" type="checkbox">
                 <label for="buy">Накупил сувениров</label>
                 <svg class="fieldset__checkbox fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
               </li>
               <li class="fieldset__item fieldset__item--achievements">
-                <input class="fieldset__checkbox" name="keep" id="keep"
-                       type="checkbox" checked>
+                <input class="fieldset__checkbox" name="keep" id="keep" type="checkbox" checked="">
                 <label for="keep">Удержал башню</label>
                 <svg class="fieldset__checkbox fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
               </li>
               <li class="fieldset__item fieldset__item--achievements">
-                <input class="fieldset__checkbox" name="thunder" id="thunder"
-                       type="checkbox">
+                <input class="fieldset__checkbox" name="thunder" id="thunder" type="checkbox">
                 <label for="thunder">Разгромил отель</label>
                 <svg class="fieldset__checkbox fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
               </li>
@@ -122,11 +114,11 @@
             <ul class="form-contact__list">
               <li class="form-contact__item form-contact__item--phone">
                 <label class="form-contact__label" for="phone">Номер телефона</label>
-                <input class="form-contact__input" id="phone" type="tel" name="phone"  placeholder="Номер, пожалуйста">
+                <input class="form-contact__input" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
               </li>
               <li class="form-contact__item form-contact__item--email">
                 <label class="form-contact__label" for="url">Адрес почты</label>
-                <input class="form-contact__input" id="url" type="email" name="email"  placeholder="Введите почту *" required>
+                <input class="form-contact__input" id="url" type="email" name="email" placeholder="Введите почту *" required="">
               </li>
             </ul>
           </fieldset>
@@ -137,7 +129,7 @@
             <legend class="fieldset__title fieldset__title--device">С каким приложением путешествовали?</legend>
             <ul class="fieldset__list fieldset__list--device">
               <li class="fieldset__item fieldset__item--device">
-                <input class="fieldset__radio" id="ios" type="radio" name="travel" value="pink-ios" checked>
+                <input class="fieldset__radio" id="ios" type="radio" name="travel" value="pink-ios" checked="">
                 <label for="ios">PINK для IOS</label>
               </li>
               <li class="fieldset__item fieldset__item--device">
