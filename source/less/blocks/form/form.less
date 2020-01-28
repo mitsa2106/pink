@@ -102,7 +102,7 @@
 .form__btn {
   display: block;
   min-height: 63px;
-  margin-bottom: 23px;
+  margin-bottom: 28px;
 }
 
 @media (min-width: @tablet-width) {
@@ -139,6 +139,35 @@
 
   .form-contact__item {
     margin-bottom: 30px;
+    position: relative;
+  }
+
+  .form-contact__item--phone::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 19px;
+    background-position: center;
+    background-color: @grey-border;
+  }
+
+  .form-contact__item--email::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-size: 18px 13px;
+    background-position: center;
+    background-color: @grey-border;
   }
 
   .form-contact__label {
@@ -168,7 +197,7 @@
     width: 620px;
     padding: 0 20px;
     margin-top: 24px; //68-44=24
-    margin-bottom: 57px;
+    margin-bottom: 47px;
     flex-direction: row;
     justify-content: space-between;
 
