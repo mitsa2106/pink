@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  //background-color: white;
+  background-color: white;
 }
 
 .form-name__list,
@@ -123,6 +123,7 @@
   .form-name__label {
     padding-left: 0;
     padding-top: 18px;
+    padding-right: 22px;
     margin: 0;
   }
 
@@ -265,6 +266,11 @@
 
   .form-contact__item {
     margin-bottom: 0;
+  }
+
+  .form-contact__item--phone::after {
+    top: 2px;
+    height: 58px;
   }
 
   .form-contact__input {
