@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.938" height="14.938" viewBox="0 0 14.938 14.938">
   <defs>
     <style>
-      .cls-1 {
+      .icon-shape7 {
         fill: #bec2c7;
         filter: url(#filter);
       }
@@ -12,5 +12,5 @@
       <feBlend result="blend" in2="SourceGraphic"/>
     </filter>
   </defs>
-  <circle id="Shape_7_copy_3" data-name="Shape 7 copy 3" class="cls-1" cx="7.469" cy="7.469" r="7.469"/>
+  <circle id="Shape_7_copy_3" data-name="Shape 7 copy 3" class="icon-shape7" cx="7.469" cy="7.469" r="7.469"/>
 </svg>
