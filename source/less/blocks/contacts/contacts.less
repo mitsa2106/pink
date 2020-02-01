@@ -6,65 +6,94 @@
   text-align: center;
 
   min-height: 602px;
-  background: url("../../../img/icon-triangle-white-footer.svg") no-repeat 50% 64%, url("../../../img/map-mobile.jpg") no-repeat 50% 190%;
+}
 
-  &__wrapper {
-    width: 320px;
-    margin: 0 auto;
-    margin-top: 82px;
-    padding: 0;
-    background-color: white;
+.contacts__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 82px;
+  padding: 0;
+  background-color: white;
+}
+
+.contacts__title {
+  margin-top: 40px;
+  margin-bottom: 27px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: normal;
+  color: @color-black;
+}
+
+.contacts__list {
+  .reset-list();
+  background-color: white;
+}
+
+.contacts__item {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  color: @color-black;
+
+  &:last-child {
+    margin-bottom: 0;
   }
+}
 
-  &__title {
-    margin-top: 40px;
-    margin-bottom: 27px;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: normal;
+.contacts__subtitle {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: @color-black;
+}
+
+.contacts__text {
+  width: 237px;
+  font-size: 24px;
+  line-height: 24px;
+  text-decoration: none;
+  color: @color-pink;
+
+  &:hover {
     color: @color-black;
   }
 
-  &__list {
-    .reset-list();
-    padding-bottom: 13px;
-    background-color: white;
-  }
-
-  &__item {
-    margin: 0 auto;
-    margin-bottom: 15px;
-    color: @color-black;
-  }
-
-  &__subtitle {
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    font-weight: bold;
-    color: @color-black;
-  }
-
-  &__text {
-    width: 237px;
-    font-size: 24px;
-    line-height: 24px;
-    text-decoration: none;
-    color: @color-pink;
-  }
-
-  .contacts__text:hover {
-    color: @color-black;
-  }
-
-  .contacts__text:active {
+  &:active {
     color: @color-black;
     opacity: 0.3;
   }
+}
 
-  .map {
-    display: none;
-  }
+.contacts__map {
+  position: relative;
+  overflow: hidden;
+  width: 320px;
+  max-width: 100%;
+  height: 230px;
+  margin: 0 auto;
+  padding: 0;
+  background-image: url("../../../img/map-mobile.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+
+  //@media (min-resolution: $retina-dppx) {
+  //  background-image: url("../../../img/map-mobile.jpg");
+  //}
+}
+
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  width: 600px;
+  height: 123px;
+  background-image: url("../../../img/icon-triangle-white-footer.svg");
+  background-size: 1300px 123px;
+  background-position: top -10px center;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
 }
 
 @media (min-width: @tablet-width) {
@@ -73,25 +102,21 @@
     position: relative;
     padding: 0;
     margin: 0 auto;
-    //margin-top: -107px;
-
-    background: url("../../../img/icon-triangle-white-footer.svg") no-repeat 50% 54.8%, url("../../../img/map-tablet.jpg") no-repeat 50% -65%;
-    background-size: 100%;
 
     min-height: 779px;
+  }
 
-    &__wrapper {
-      width: 660px;
-      padding: 0;
-      margin: 0 auto;
-    }
+  .contacts__wrapper {
+    width: 660px;
+    padding: 0;
+    margin: 0 auto;
+  }
 
-    &__title {
-      padding: 45px 45px;
-      margin: 0 auto;
-      font-size: 40px;
-      line-height: 45px;
-    }
+  .contacts__title {
+    padding: 45px 45px;
+    margin: 0 auto;
+    font-size: 40px;
+    line-height: 45px;
   }
 
   .contacts__list {
@@ -110,6 +135,23 @@
   .contacts__list li:nth-child(3) {
     margin-bottom: 0;
   }
+
+  .contacts__map {
+    width: 700px;
+    height: 390px;
+    background-image: url("../../../img/map-tablet.jpg");
+    background-position: bottom 25% center;
+
+    &::before {
+      top: 20px;
+      width: 700px;
+    }
+  }
+
+  .contacts__map iframe {
+    width: 700px;
+    height: 407px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -117,27 +159,24 @@
     width: 100%;
     margin: 0 auto;
     padding: 0;
-    background: url("../../../img/icon-triangle-white-footer.svg") no-repeat 50% 49%, url("../../../img/map-desktop.jpg") no-repeat 50% -100%;
-    background-size: 100%;
 
     min-height: 868px;
+  }
 
-    &__wrapper {
-      width: 1200px;
-    }
+  .contacts__wrapper {
+    width: 1200px;
+  }
 
-    &__title {
-      padding: 62px 160px;
-      padding-bottom: 55px;
-      margin: 0 auto;
-      font-size: 50px;
-      line-height: 60px;
-    }
+  .contacts__title {
+    padding: 62px 160px;
+    padding-bottom: 55px;
+    margin: 0 auto;
+    font-size: 50px;
+    line-height: 60px;
   }
 
   .contacts__list {
     padding: 0 130px;
-    padding-bottom: 5px;
   }
 
   .contacts__item {
@@ -159,5 +198,24 @@
   .contacts__subtitle {
     display: inline-block;
     margin-bottom: 22px;
+  }
+
+  .contacts__map {
+    width: 1200px;
+    height: 507px;
+    background-image: url("../../../img/map-desktop.jpg");
+    background-position: center;
+
+
+    &::before {
+      top: 61px;
+      width: 1200px;
+      background-size: 107%;
+    }
+  }
+
+  .contacts__map iframe {
+    width: 1200px;
+    height: 507px;
   }
 }
