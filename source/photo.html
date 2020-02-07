@@ -18,7 +18,7 @@
   </div>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <div class="page-header__logo-wrap page-header__logo-wrap--nav-opened">
+      <div class="page-header__logo-wrap"> <!--page-header__logo-wrap--nav-opened класс для открытого меню-->
         <a class="logo" href="index.html" aria-label="Приложение Pink">
           <svg class="logo__logo-image logo__logo-image--mobile" width="75" height="22"><use xlink:href="#icon-logotype-white-mobile"></use></svg>
           <svg class="logo__logo-image logo__logo-image--tablet" width="147" height="40"><use xlink:href="#icon-logotype-white-tablet"></use></svg>
@@ -26,13 +26,13 @@
         </a>
       </div>
 
-      <nav class="main-nav main-nav--opened main-nav--no-js"> <!--main-nav--closed-->
+      <nav class="main-nav main-nav--closed"> <!--main-nav--opened класс для открытого меню-->
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item">
+          <li class="site-list__item">
             <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item--active">
+          <li class="site-list__item site-list__item--active">
             <a href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
@@ -46,7 +46,7 @@
     </div>
   </header>
 
-  <main class="page-main page-main--nav-opened">
+  <main class="page-main"> <!--page-main--nav-opened класс для открытого меню-->
     <div class="main-background main-background--photo-page">
       <div class="container">
         <h1 class="page-main__heading">Фотографии<br> пользователей</h1>
@@ -274,5 +274,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
   </body>
 </html>

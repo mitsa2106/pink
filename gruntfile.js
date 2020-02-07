@@ -107,7 +107,8 @@ module.exports = function (grunt) {
         bsFiles: {
           src: [
             "build/*.html",
-            "build/css/*.css"
+            "build/css/*.css",
+            "build/js/*.js"
           ]
         },
         options: {
@@ -128,6 +129,10 @@ module.exports = function (grunt) {
       style: {
         files: ["source/less/**/*.less"],
         tasks: ["less", "postcss", "csso"]
+      },
+      js: {
+        files: ["source/js/*.js"],
+        tasks: ["copy"]
       }
     }
   });
