@@ -1,3 +1,4 @@
+// 1.КНОПКА МЕНЮ БУРГЕР (ОТКРЫТЬ/ЗАКРЫТЬ)
 // Создаем переменную и присваиваем ей значение
 let header = document.querySelector('.page-header__logo-wrap');
 let nav = document.querySelector('.main-nav');
@@ -30,6 +31,8 @@ buttonToggle.onclick = function() {
   nav.classList.toggle('main-nav--opened');
   main.classList.toggle('page-main--nav-opened');
 };
+
+
 
 
 
