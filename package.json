@@ -9,7 +9,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^9.5.1",
-    "browser-sync": "2.26.x",
+    "browser-sync": "2.27.x",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
